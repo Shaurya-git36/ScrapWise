@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ScrapWise - a student frontend project for scrap prices, earnings estimates and doorstep pickup requests.">
+    <title>Book Pickup | ScrapWise</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header py-3">
+    <nav class="container d-flex flex-wrap align-items-center justify-content-between gap-3" aria-label="Main navigation">
+        <a class="logo" href="index.html"><span class="logo-mark">♻</span>ScrapWise</a>
+        <div class="d-flex align-items-center justify-content-center flex-wrap gap-1"><a class="nav-link px-2 " href="index.html" >Home</a>
+<a class="nav-link px-2 " href="rates.html" >Scrap Rates</a>
+<a class="nav-link px-2 " href="calculator.html" >Calculator</a>
+<a class="nav-link px-2 active" href="booking.html" aria-current="page">Book Pickup</a>
+<a class="nav-link px-2 " href="how-it-works.html" >How It Works</a></div>
+    </nav>
+</header>
+<main>
+<section class="container pt-4 pt-md-5"><div class="page-banner p-4 p-md-5">
+    <p class="section-label mb-2">SCHEDULE A COLLECTION</p><h1>Book a scrap pickup.</h1>
+    <p class="text-secondary mb-0">Fill the form below to see how our pickup scheduling interface works.</p>
+</div></section>
+<section class="container pt-5"><div class="row g-4">
+  <div class="col-lg-8"><form id="bookingForm" class="form-box p-4 p-md-5" onsubmit="submitBooking(event)">
+     <h2 class="h4 section-title">Your details</h2><p class="text-secondary mb-4">All fields marked * are required.</p>
+     <div class="row g-3">
+       <div class="col-md-6"><label class="form-label" for="customerName">Full name *</label><input id="customerName" name="name" class="form-control" required maxlength="60" placeholder="Your name"></div>
+       <div class="col-md-6"><label class="form-label" for="phone">Phone number *</label><input id="phone" name="phone" class="form-control" type="tel" required pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit phone number" placeholder="10-digit mobile number"></div>
+       <div class="col-12"><label class="form-label" for="address">Pickup address *</label><textarea id="address" name="address" class="form-control" rows="3" required placeholder="House number, street, area"></textarea></div>
+       <div class="col-md-6"><label class="form-label" for="city">City *</label><input id="city" name="city" class="form-control" required placeholder="Your city"></div>
+       <div class="col-md-6"><label class="form-label" for="pincode">PIN code *</label><input id="pincode" name="pincode" class="form-control" required inputmode="numeric" pattern="[0-9]{6}" maxlength="6" title="Enter a 6-digit PIN code" placeholder="6-digit PIN"></div>
+     </div>
+     <h3 class="h5 section-title mt-4">Pickup preferences</h3>
+     <div class="row g-3">
+       <div class="col-md-6"><label class="form-label" for="pickupDate">Preferred pickup date *</label><input id="pickupDate" name="pickupDate" type="date" class="form-control" required></div>
+       <div class="col-md-6"><label class="form-label" for="pickupTime">Preferred time *</label><select id="pickupTime" name="pickupTime" class="form-select" required><option value="">Choose a time</option><option>9 AM – 12 PM</option><option>12 PM – 3 PM</option><option>3 PM – 6 PM</option></select></div>
+       <div class="col-md-6"><label class="form-label" for="scrapCategory">Main scrap category *</label><select id="scrapCategory" name="scrapCategory" class="form-select" required><option value="">Select scrap type</option><option>Old Newspapers</option><option>Cardboard</option><option>Iron / Metal</option><option>Plastic Bottles</option><option>E-Waste</option><option>Mixed Materials</option></select></div>
+       <div class="col-md-6"><label class="form-label" for="estimatedWeight">Approximate quantity (kg) *</label><input id="estimatedWeight" name="estimatedWeight" type="number" min="0.1" step="0.1" class="form-control" required placeholder="e.g. 5"></div>
+     </div>
+     <button class="btn btn-dark-green btn-lg rounded-pill mt-4 px-4" type="submit">Submit request →</button>
+     <p class="help-note mt-3 mb-0"></p>
+     <div class="result-message p-3 mt-4" id="bookingResult" hidden><strong>✓ Form submitted successfully</strong><p class="mb-0 mt-1" id="bookingMessage"></p><small></small></div>
+   </form></div>
+   <aside class="col-lg-4"><div class="tip-box p-4"><div class="fs-1 mb-3">🚚</div><h3 class="h4 fw-bold">What happens next?</h3>
+     <p>In a real service, a collector would confirm the request, visit the address and weigh the material before payment.</p>
+     <hr><h4 class="h6 fw-bold">Our demo shows</h4><p class="mb-0">Form validation, preferred pickup time selection and an on-screen confirmation.</p>
+   </div><div class="soft-panel p-4 mt-3"><h4 class="h6 fw-bold">Before you book</h4><p class="mb-0">Want to see an estimated payout? <a href="calculator.html">Try the calculator first.</a></p></div></aside>
+</div></section>
+</main>
+<footer class="py-5 mt-5">
+    <div class="container">
+        <div class="row gy-4 align-items-start">
+            <div class="col-md-5">
+                <h3 class="fw-bold">♻ ScrapWise</h3>
+                <p class="mb-0">A smarter way to understand the value of household scrap.</p>
+            </div>
+            <div class="col-md-4"><div class="fw-bold mb-2">Explore</div>
+                <a href="rates.html" class="d-block mb-2">Scrap rates</a>
+                <a href="calculator.html" class="d-block mb-2">Earnings calculator</a>
+                <a href="booking.html" class="d-block">Pickup form</a>
+            </div>
+            <div class="col-md-3"><div class="fw-bold mb-2">Project notice</div>
+                <small></small>
+            </div>
+        </div>
+        <hr class="my-4">
+        <small>© ScrapWise · CSE326 Internet Programming Project</small>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

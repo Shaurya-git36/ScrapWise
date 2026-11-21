@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ScrapWise - a student frontend project for scrap prices, earnings estimates and doorstep pickup requests.">
+    <title>How It Works | ScrapWise</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header py-3">
+    <nav class="container d-flex flex-wrap align-items-center justify-content-between gap-3" aria-label="Main navigation">
+        <a class="logo" href="index.html"><span class="logo-mark">♻</span>ScrapWise</a>
+        <div class="d-flex align-items-center justify-content-center flex-wrap gap-1"><a class="nav-link px-2 " href="index.html" >Home</a>
+<a class="nav-link px-2 " href="rates.html" >Scrap Rates</a>
+<a class="nav-link px-2 " href="calculator.html" >Calculator</a>
+<a class="nav-link px-2 " href="booking.html" >Book Pickup</a>
+<a class="nav-link px-2 active" href="how-it-works.html" aria-current="page">How It Works</a></div>
+    </nav>
+</header>
+<main>
+<section class="container pt-4 pt-md-5"><div class="page-banner p-4 p-md-5"><p class="section-label mb-2">THE PROCESS</p><h1>Simple steps. Less waste.</h1><p class="text-secondary mb-0">A straightforward approach to organizing a household scrap pickup.</p></div></section>
+<section class="container py-5"><div class="row g-4">
+   <div class="col-md-4"><div class="simple-card p-4"><div class="step-number mb-3">1</div><h3 class="h5 fw-bold">Check the rates</h3><p class="text-secondary mb-0">Compare the example per-kilogram prices for the materials you have at home.</p></div></div>
+   <div class="col-md-4"><div class="simple-card p-4"><div class="step-number mb-3">2</div><h3 class="h5 fw-bold">Calculate earnings</h3><p class="text-secondary mb-0">Enter approximate weights to get an instant estimate of your scrap's total value.</p></div></div>
+   <div class="col-md-4"><div class="simple-card p-4"><div class="step-number mb-3">3</div><h3 class="h5 fw-bold">Request a pickup</h3><p class="text-secondary mb-0">Enter your address and preferred date to see a booking confirmation.</p></div></div>
+</div></section>
+<section class="container pb-5"><div class="row g-4 align-items-stretch">
+    <div class="col-lg-5"><div class="tip-box p-4 p-md-5 h-100"><div class="fs-1 mb-3">⚖️</div><h2 class="h3 fw-bold">Digital weighing assurance</h2><p>Our proposed collection process uses an electronic scale so the measured weight is visible to the customer.</p>
+    <p class="mb-0">Actual measurement accuracy would depend on the scale, calibration and collection process. The website does not connect to a weighing device.</p></div></div>
+    <div class="col-lg-7"><div class="form-box p-4 p-md-5 h-100"><p class="section-label">COMMON QUESTIONS</p><h2 class="h3 section-title">Frequently asked questions</h2>
+      <details><summary>Are the scrap rates updated live?</summary><p class="pt-3 mb-0 text-secondary">No. The prices shown are example values entered manually for this frontend project.</p></details>
+      <details><summary>Does submitting the form book a real pickup?</summary><p class="pt-3 mb-0 text-secondary">No. This version shows an on-screen confirmation but does not send data to a collector.</p></details>
+      <details><summary>How is the payout estimated?</summary><p class="pt-3 mb-0 text-secondary">JavaScript multiplies each material's entered weight by its example price per kg and adds the amounts.</p></details>
+      <details><summary>Can the website work on mobile?</summary><p class="pt-3 mb-0 text-secondary">Yes. Bootstrap grid classes adjust the columns for different screen widths.</p></details>
+    </div></div>
+</div></section>
+<section class="container"><div class="soft-panel p-4 p-md-5 text-center"><h2 class="section-title">Ready to give it a try?</h2><p class="text-secondary">Explore the calculator or create a demo pickup request.</p><div class="d-flex gap-3 justify-content-center flex-wrap"><a href="calculator.html" class="btn btn-dark-green rounded-pill px-4">Calculate value</a><a href="booking.html" class="btn btn-outline-success rounded-pill px-4">Book pickup</a></div></div></section>
+</main>
+<footer class="py-5 mt-5">
+    <div class="container">
+        <div class="row gy-4 align-items-start">
+            <div class="col-md-5">
+                <h3 class="fw-bold">♻ ScrapWise</h3>
+                <p class="mb-0">A smarter way to understand the value of household scrap.</p>
+            </div>
+            <div class="col-md-4"><div class="fw-bold mb-2">Explore</div>
+                <a href="rates.html" class="d-block mb-2">Scrap rates</a>
+                <a href="calculator.html" class="d-block mb-2">Earnings calculator</a>
+                <a href="booking.html" class="d-block">Pickup form</a>
+            </div>
+            <div class="col-md-3"><div class="fw-bold mb-2">Project notice</div>
+                <small></small>
+            </div>
+        </div>
+        <hr class="my-4">
+        <small>© ScrapWise · CSE326 Internet Programming Project</small>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

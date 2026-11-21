@@ -1,0 +1,117 @@
+body {background: #f8faf6;color: #24372f;font-family: Arial, sans-serif;
+}
+a {color: #226849;
+}
+a:hover {color: #164734;
+}
+/* Navigation */
+.site-header {background: white;border-bottom: 1px solid #e4ebe2;
+}
+.logo {color: #174a37;font-size: 25px;font-weight: bold;text-decoration: none;
+}
+.logo-mark {background: #d4f3a4;border-radius: 12px;padding: 7px 11px;margin-right: 7px;
+}
+.nav-link {color: #315544;font-weight: 600;
+}
+.nav-link:hover {color: #16754b;
+}
+.nav-link.active {color: #16814d;
+}
+.btn-main {background: #b9e873;color: #183a2c;border: none;font-weight: bold;
+}
+.btn-main:hover {background: #a5d960;color: #183a2c;
+}
+.btn-dark-green {background: #1e6346;color: white;border: none;
+}
+.btn-dark-green:hover {background: #144b36;color: white;
+}
+/* Homepage hero */
+.hero-shell {background: #154d39;color: white;border-radius: 26px;overflow: hidden;
+}
+.hero-title {font-size: 54px;line-height: 1.09;font-weight: bold;letter-spacing: -1px;
+}
+.hero-title span {color: #b9e873;
+}
+.hero-text {color: #deeee0;max-width: 540px;
+}
+.hero-visual {background: #d4f2bf;border-radius: 26px;padding: 14px;
+}
+.hero-visual img {width: 100%;height: auto;display: block;
+}
+.hero-label {color: #d0edab;font-size: 12px;font-weight: bold;letter-spacing: 2px;
+}
+.mini-proof {border-top: 1px solid #5d8872;color: #e4f2e7;
+}
+.section-label {color: #24714e;font-size: 12px;font-weight: bold;letter-spacing: 1.5px;
+}
+.section-title {color: #184d38;font-weight: bold;
+}
+.soft-panel {background: #eaf5e5;border-radius: 22px;
+}
+/* Reusable cards */
+.simple-card {background-color: #ffffff;border: 1px solid #dce8d8;border-radius: 24px;padding: 28px;display: flex;flex-direction: column;align-items: flex-start;height: 100%;
+}
+.simple-card:hover {border-color: #b8d4af;
+}
+.card-icon {width: 55px;height: 55px;background: #eaf5df;border-radius: 14px;font-size: 26px;text-align: center;line-height: 55px;
+}
+.example-card {background-color: #ffffff;border: 1px solid #dce8d8;border-radius: 24px;padding: 28px;display: flex;flex-direction: column;align-items: flex-start;height: auto;
+}
+.step-number {background: #174d39;color: white;border-radius: 50%;width: 40px;height: 40px;
+text-align: center;line-height: 40px;font-weight: bold;
+}
+/* Inner page headings and rate table */
+.page-banner {background: #e8f4e3;border-radius: 24px;
+}
+.page-banner h1 {color: #174d39;font-size: 42px;font-weight: bold;
+}
+.rate-table {background: white;border-radius: 16px;overflow: hidden;
+}
+.rate-table th {background: #e6f2dd;color: #24543f;
+}
+.rate-table td,
+.rate-table th {padding: 17px;vertical-align: middle;
+}
+.rate-price {font-size: 22px;font-weight: bold;color: #186b44;
+}
+.tip-box {background: #163f32;color: white;border-radius: 20px;
+}
+/* Calculator and booking forms */
+.form-box {background: white;border: 1px solid #e2ebdf;border-radius: 22px;
+}
+.form-label {font-weight: bold;color: #3a5547;
+}
+.form-select:focus {border-color: #65a76c;box-shadow: 0 0 0 3px #e0f1da;
+}
+.material-row {background: #f4f8f1;border: 1px solid #e2ebdd;border-radius: 14px;
+}
+.total-box {background: #174d39;color: white;border-radius: 22px;
+}
+.total-number {font-size: 52px;font-weight: bold;color: #c7f18a;
+}
+.result-message {background: #e7f5de;color: #1e583a;border: 1px solid #aacfaa;border-radius: 12px;
+}
+.help-note {font-size: 13px;color: #5f7768;
+}
+/* FAQ and footer */
+details {border-bottom: 1px solid #dbe8d9;padding: 17px 0;
+}
+summary {cursor: pointer;font-weight: bold;color: #1e583b;
+}
+footer {background: #123d2f;color: #e6efe9;
+}
+footer a {color: #e6efe9;text-decoration: none;
+}
+footer a:hover {color: #c6f18a;
+}
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+    }
+    .page-banner h1 {
+        font-size: 34px;
+    }
+    .total-number {
+        font-size: 43px;
+    }
+}

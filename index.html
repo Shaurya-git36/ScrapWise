@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ScrapWise - a student frontend project for scrap prices, earnings estimates and doorstep pickup requests.">
+    <title>Home | ScrapWise</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header py-3">
+        <nav class="container d-flex flex-wrap align-items-center justify-content-between gap-3"
+            aria-label="Main navigation">
+            <a class="logo" href="index.html"><span class="logo-mark">♻</span>ScrapWise</a>
+            <div class="d-flex align-items-center justify-content-center flex-wrap gap-1"><a
+                    class="nav-link px-2 active" href="index.html" aria-current="page">Home</a>
+                <a class="nav-link px-2 " href="rates.html">Scrap Rates</a>
+                <a class="nav-link px-2 " href="calculator.html">Calculator</a>
+                <a class="nav-link px-2 " href="booking.html">Book Pickup</a>
+                <a class="nav-link px-2 " href="how-it-works.html">How It Works</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container pt-4 pt-md-5">
+            <section class="hero-shell p-4 p-md-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <p class="hero-label mb-3">SMALL STEPS. BIG IMPACT.</p>
+                        <h1 class="hero-title mb-4">Your scrap has <span>value.</span> Let's find it.</h1>
+                        <p class="hero-text fs-5 mb-4">Know the rates, estimate your earnings and plan a doorstep scrap
+                            pickup—all in one simple place.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="calculator.html" class="btn btn-main btn-lg rounded-pill px-4">Calculate earnings
+                                →</a>
+                            <a href="booking.html" class="btn btn-outline-light btn-lg rounded-pill px-4">Book a
+                                pickup</a>
+                        </div>
+                        <div class="mini-proof mt-5 pt-3 d-flex flex-wrap gap-4"></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-visual"><img src="hero-art.svg"
+                                alt="Illustration of a scrap pickup truck, cartons and recyclable materials"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="container py-5">
+            <div class="text-center mb-4">
+                <p class="section-label">WHY SCRAPWISE?</p>
+                <h2 class="section-title">Scrap collection, made simpler.</h2>
+                <p class="text-secondary">Three things you can do without leaving the website.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="simple-card p-4">
+                        <div class="card-icon mb-3">📋</div>
+                        <h3 class="h5 fw-bold">Check scrap rates</h3>
+                        <p class="text-secondary">See example prices per kilogram for commonly collected household
+                            materials.</p><a href="rates.html" class="fw-bold text-decoration-none">View price board
+                            →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="simple-card p-4">
+                        <div class="card-icon mb-3">🧮</div>
+                        <h3 class="h5 fw-bold">Estimate earnings</h3>
+                        <p class="text-secondary">Enter the weights of different materials and instantly see an
+                            estimated total.</p><a href="calculator.html" class="fw-bold text-decoration-none">Try
+                            calculator →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="simple-card p-4">
+                        <div class="card-icon mb-3">🚚</div>
+                        <h3 class="h5 fw-bold">Request a pickup</h3>
+                        <p class="text-secondary">Choose a suitable date and fill in your basic pickup information.</p>
+                        <a href="booking.html" class="fw-bold text-decoration-none">Open booking form →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container pb-5">
+            <div class="soft-panel p-4 p-md-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-8">
+                        <p class="section-label">HOW IT WORKS</p>
+                        <h2 class="section-title">From old newspapers to a cleaner home.</h2>
+                        <p class="mb-0 text-secondary">Check prices, estimate the quantity, and submit a pickup request.
+                            It's a simple process designed for everyday households.</p>
+                    </div>
+                    <div class="col-md-4 text-md-end"><a href="how-it-works.html"
+                            class="btn btn-dark-green rounded-pill px-4 py-3">See the 3 steps →</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-5 mt-5">
+        <div class="container">
+            <div class="row gy-4 align-items-start">
+                <div class="col-md-5">
+                    <h3 class="fw-bold">♻ ScrapWise</h3>
+                    <p class="mb-0">A smarter way to understand the value of household scrap.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="fw-bold mb-2">Explore</div>
+                    <a href="rates.html" class="d-block mb-2">Scrap rates</a>
+                    <a href="calculator.html" class="d-block mb-2">Earnings calculator</a>
+                    <a href="booking.html" class="d-block">Pickup form</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="fw-bold mb-2">Project notice</div>
+                    <small>Frontend demonstration for CSE326. Rates are examples, and bookings are not sent to real
+                        collectors.</small>
+                </div>
+            </div>
+            <hr class="my-4">
+            <small>© ScrapWise · CSE326 Internet Programming Project</small>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

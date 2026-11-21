@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ScrapWise - a student frontend project for scrap prices, earnings estimates and doorstep pickup requests.">
+    <title>Earnings Calculator | ScrapWise</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header py-3">
+        <nav class="container d-flex flex-wrap align-items-center justify-content-between gap-3"
+            aria-label="Main navigation">
+            <a class="logo" href="index.html"><span class="logo-mark">♻</span>ScrapWise</a>
+            <div class="d-flex align-items-center justify-content-center flex-wrap gap-1"><a class="nav-link px-2 "
+                    href="index.html">Home</a>
+                <a class="nav-link px-2 " href="rates.html">Scrap Rates</a>
+                <a class="nav-link px-2 active" href="calculator.html" aria-current="page">Calculator</a>
+                <a class="nav-link px-2 " href="booking.html">Book Pickup</a>
+                <a class="nav-link px-2 " href="how-it-works.html">How It Works</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container pt-4 pt-md-5">
+            <div class="page-banner p-4 p-md-5">
+                <p class="section-label mb-2">SMART ESTIMATE</p>
+                <h1>How much could you earn?</h1>
+                <p class="text-secondary mb-0">Enter the approximate weights below. Your total updates as you type.</p>
+            </div>
+        </section>
+        <section class="container pt-5">
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <form id="calculatorForm" class="form-box p-4">
+                        <h2 class="h4 section-title mb-1">Your scrap items</h2>
+                        <p class="text-secondary mb-4">Leave a material blank if you don't have any.</p>
+                        <div class="material-row p-3 mb-3">
+                            <div class="row align-items-center g-3">
+                                <div class="col-sm-7"><label class="fw-bold mb-1" for="paper">📰 Old Newspapers</label>
+                                    <p class="text-secondary small mb-0">₹12 per kg</p>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="input-group"><input class="form-control" type="number" id="paper"
+                                            min="0" step="0.1" placeholder="0"
+                                            aria-label="Weight of Old Newspapers in kilograms"
+                                            oninput="calculateTotal()"><span class="input-group-text">kg</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="material-row p-3 mb-3">
+                            <div class="row align-items-center g-3">
+                                <div class="col-sm-7"><label class="fw-bold mb-1" for="cardboard">📦 Cardboard</label>
+                                    <p class="text-secondary small mb-0">₹8 per kg</p>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="input-group"><input class="form-control" type="number" id="cardboard"
+                                            min="0" step="0.1" placeholder="0"
+                                            aria-label="Weight of Cardboard in kilograms"
+                                            oninput="calculateTotal()"><span class="input-group-text">kg</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="material-row p-3 mb-3">
+                            <div class="row align-items-center g-3">
+                                <div class="col-sm-7"><label class="fw-bold mb-1" for="metal">🔩 Iron / Metal</label>
+                                    <p class="text-secondary small mb-0">₹30 per kg</p>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="input-group"><input class="form-control" type="number" id="metal"
+                                            min="0" step="0.1" placeholder="0"
+                                            aria-label="Weight of Iron / Metal in kilograms"
+                                            oninput="calculateTotal()"><span class="input-group-text">kg</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="material-row p-3 mb-3">
+                            <div class="row align-items-center g-3">
+                                <div class="col-sm-7"><label class="fw-bold mb-1" for="plastic">🧴 Plastic
+                                        Bottles</label>
+                                    <p class="text-secondary small mb-0">₹10 per kg</p>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="input-group"><input class="form-control" type="number" id="plastic"
+                                            min="0" step="0.1" placeholder="0"
+                                            aria-label="Weight of Plastic Bottles in kilograms"
+                                            oninput="calculateTotal()"><span class="input-group-text">kg</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="material-row p-3 mb-3">
+                            <div class="row align-items-center g-3">
+                                <div class="col-sm-7"><label class="fw-bold mb-1" for="ewaste">🔌 E-Waste</label>
+                                    <p class="text-secondary small mb-0">₹20 per kg</p>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="input-group"><input class="form-control" type="number" id="ewaste"
+                                            min="0" step="0.1" placeholder="0"
+                                            aria-label="Weight of E-Waste in kilograms" oninput="calculateTotal()"><span
+                                            class="input-group-text">kg</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary mt-2" onclick="resetCalculator()">Clear
+                            all weights</button>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                    <div class="total-box p-4 p-md-5">
+                        <p class="text-uppercase small fw-bold mb-2">Estimated payout</p>
+                        <div class="total-number" id="totalAmount" aria-live="polite">₹0.00</div>
+                        <hr>
+                        <p class="mb-1">Total scrap weight</p>
+                        <h3 id="totalWeight" class="h2 fw-bold mb-4">0.0 kg</h3>
+                        <p class="small">Estimate = weight × example rate. Final payout depends on actual weighing and
+                            agreed rates.</p>
+                        <a href="booking.html" class="btn btn-main btn-lg rounded-pill w-100 mt-3">Continue to pickup
+                            →</a>
+                    </div>
+                    <div class="example-card p-4 mt-3">
+                        <h3 class="h6 fw-bold">Example</h3>
+                        <p class="mb-0 text-secondary">5 kg newspapers × ₹12 = ₹60<br>2 kg cardboard × ₹8 =
+                            ₹16<br><strong>Total estimate = ₹76</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-5 mt-5">
+        <div class="container">
+            <div class="row gy-4 align-items-start">
+                <div class="col-md-5">
+                    <h3 class="fw-bold">♻ ScrapWise</h3>
+                    <p class="mb-0">A smarter way to understand the value of household scrap.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="fw-bold mb-2">Explore</div>
+                    <a href="rates.html" class="d-block mb-2">Scrap rates</a>
+                    <a href="calculator.html" class="d-block mb-2">Earnings calculator</a>
+                    <a href="booking.html" class="d-block">Pickup form</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="fw-bold mb-2">Project notice</div>
+                    <small></small>
+                </div>
+            </div>
+            <hr class="my-4">
+            <small>© ScrapWise · CSE326 Internet Programming Project</small>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
