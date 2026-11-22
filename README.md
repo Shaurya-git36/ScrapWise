@@ -1,5 +1,6 @@
 # ScrapWise — Fresh Build (CSE326)
 
+
 This is a **new frontend project built from scratch** based on the assigned Doorstep Scrap / Paper / Recyclables Pickup Scheduler brief.
 
 ## How to open
