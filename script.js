@@ -52,3 +52,8 @@ if (dateBox) {
     today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
     dateBox.min = today.toISOString().slice(0, 10);
 }
+
+// For Dark Mode
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+}
