@@ -119,18 +119,6 @@ body.dark-mode {
     background: #101b17;
     color: #f2f7f1;
 }
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 40px;
-    }
-    .page-banner h1 {
-        font-size: 34px;
-    }
-    .total-number {
-        font-size: 43px;
-    }
-}
-
 /* Automatic Dark Mode - ScrapWise */
                 
 @media (prefers-color-scheme: dark) {
@@ -190,4 +178,16 @@ details { border-color: #3e5846;
 }
 .btn-outline-secondary:hover { background: #496d53; color: #fff; 
 }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+    }
+    .page-banner h1 {
+        font-size: 34px;
+    }
+    .total-number {
+        font-size: 43px;
+    }
 }
