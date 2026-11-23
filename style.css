@@ -123,61 +123,61 @@ body.dark-mode {
                 
 @media (prefers-color-scheme: dark) {
     :root { color-scheme: dark; --bs-body-bg: #101c16; --bs-body-color: #edf6eb; --bs-border-color: #405747; 
-}
-body { background: #101c16; color: #edf6eb; 
-}
-.site-header { background: #18291f; border-bottom-color: #35513d; 
-}
-.logo, .nav-link { color: #e5f4e5; 
-}
-.nav-link:hover, .nav-link.active { color: #b9e873; 
-}
-.logo-mark, .card-icon { background: #416449; 
-}
-.simple-card, .example-card, .form-box, .rate-table { background: #1b2d23; color: #edf6eb; border-color: #3b5544; 
-}
-.simple-card:hover { border-color: #739c75; 
-}
-.page-banner, .soft-panel, .material-row { background: #22372a; color: #edf6eb; border-color: #395342; 
-}
-.step-number { background: #3e8059; 
-}
-.section-title, .page-banner h1, .section-label, .form-label, summary { color: #c0e99a; 
-}
-.text-secondary { color: #bdcebf !important; 
-}
-.help-note { color: #bdcebf; 
-}
-a:not(.btn):not(.logo):not(.nav-link) { color: #b9e873; 
-}
-a:not(.btn):not(.logo):not(.nav-link):hover { color: #d3f6a3; 
-}
-details { border-color: #3e5846; 
-}
-.form-control, .form-select, .input-group-text { background-color: #14251b; border-color: #47634d; color: #f2faf0; 
-}
-.form-control::placeholder { color: #a5b9a7; 
-}
-.form-control:focus, .form-select:focus { background-color: #1a3021; color: #fff; border-color: #9cce8f; box-shadow: 0 0 0 3px rgba(156,206,143,.2); 
-}
-.rate-table .table { --bs-table-color: #edf6eb; --bs-table-bg: #1b2d23; --bs-table-border-color: #3e5846; --bs-table-hover-color: #fff; --bs-table-hover-bg: #294634; color: #edf6eb; background: #1b2d23; 
-}
-.rate-table .table th { background: #294433; color: #e8f5e5; 
-}
-.rate-table .table td { color: #edf6eb; 
-}
-.rate-table .table .rate-price { color: #b9e873;
-}
-.badge.text-bg-light { background: #2c4737 !important; color: #e6f3e2 !important; border-color: #4a6752 !important; 
-}
-.total-box, .tip-box { background: #173f30; 
-}
-.result-message { background: #1c432b; color: #e4f6de; border-color: #4e865b; 
-}
-.btn-outline-secondary { color: #e5f3e4; border-color: #8baf91; 
-}
-.btn-outline-secondary:hover { background: #496d53; color: #fff; 
-}
+    }
+    body { background: #101c16; color: #edf6eb; 
+    }
+    .site-header { background: #18291f; border-bottom-color: #35513d; 
+    }
+    .logo, .nav-link { color: #e5f4e5; 
+    }
+    .nav-link:hover, .nav-link.active { color: #b9e873; 
+    }
+    .logo-mark, .card-icon { background: #416449; 
+    }
+    .simple-card, .example-card, .form-box, .rate-table { background: #1b2d23; color: #edf6eb; border-color: #3b5544; 
+    }
+    .simple-card:hover { border-color: #739c75; 
+    }
+    .page-banner, .soft-panel, .material-row { background: #22372a; color: #edf6eb; border-color: #395342; 
+    }
+    .step-number { background: #3e8059; 
+    }
+    .section-title, .page-banner h1, .section-label, .form-label, summary { color: #c0e99a; 
+    }
+    .text-secondary { color: #bdcebf !important; 
+    }
+    .help-note { color: #bdcebf; 
+    }
+    a:not(.btn):not(.logo):not(.nav-link) { color: #b9e873; 
+    }
+    a:not(.btn):not(.logo):not(.nav-link):hover { color: #d3f6a3; 
+    }
+    details { border-color: #3e5846; 
+    }
+    .form-control, .form-select, .input-group-text { background-color: #14251b; border-color: #47634d; color: #f2faf0; 
+    }
+    .form-control::placeholder { color: #a5b9a7; 
+    }
+    .form-control:focus, .form-select:focus { background-color: #1a3021; color: #fff; border-color: #9cce8f; box-shadow: 0 0 0 3px rgba(156,206,143,.2); 
+    }
+    .rate-table .table { --bs-table-color: #edf6eb; --bs-table-bg: #1b2d23; --bs-table-border-color: #3e5846; --bs-table-hover-color: #fff; --bs-table-hover-bg: #294634; color: #edf6eb; background: #1b2d23; 
+    }
+    .rate-table .table th { background: #294433; color: #e8f5e5; 
+    }
+    .rate-table .table td { color: #edf6eb; 
+    }
+    .rate-table .table .rate-price { color: #b9e873;
+    }
+    .badge.text-bg-light { background: #2c4737 !important; color: #e6f3e2 !important; border-color: #4a6752 !important; 
+    }
+    .total-box, .tip-box { background: #173f30; 
+    }
+    .result-message { background: #1c432b; color: #e4f6de; border-color: #4e865b; 
+    }
+    .btn-outline-secondary { color: #e5f3e4; border-color: #8baf91; 
+    }
+    .btn-outline-secondary:hover { background: #496d53; color: #fff; 
+    }
 }
 
 @media (max-width: 768px) {
