@@ -1,6 +1,5 @@
-// ScrapWise JavaScript: four small functions and one date setting.
+// Hide rate rows that do not match the search text
 
-// Hide rate rows that do not match the search text.
 function searchRates() {
     let searchText = document.getElementById('searchBox').value.toLowerCase();
     let rows = document.querySelectorAll('.scrap-row');
