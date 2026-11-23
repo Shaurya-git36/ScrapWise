@@ -3,7 +3,7 @@
 function searchRates() {
     let searchText = document.getElementById('searchBox').value.toLowerCase();
     let rows = document.querySelectorAll('.scrap-row');
-    let matches = 0;
+    let matches = 0 ;
 
     rows.forEach(function(row) {
         let found = row.innerText.toLowerCase().includes(searchText);
